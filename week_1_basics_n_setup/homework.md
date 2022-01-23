@@ -50,7 +50,7 @@ How many taxi trips were there on January 15?
 
 Consider only trips that started on January 15.
 
-## Question 4. Average
+## Question 4. Largest tip for each day
 
 Find the largest tip for each day. 
 On which day it was the largest tip in January?
