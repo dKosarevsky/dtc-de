@@ -1,6 +1,6 @@
 with trips as (
-    select concat(zp."Zone", ' / ', zd."Zone") as pickup_dropoff_pair,
-           avg(total_amount)                   as avg_price
+    select concat(zp."Zone", ' / ', coalesce(zd."Zone", 'Unknown')) as pickup_dropoff_pair,
+           avg(total_amount)                                        as avg_price
     from yellow_taxi_trips t
              join zones zp
                   on t."PULocationID" = zp."LocationID"
