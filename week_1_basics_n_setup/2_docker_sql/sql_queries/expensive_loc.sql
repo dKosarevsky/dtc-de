@@ -8,7 +8,7 @@ with trips as (
                   on t."DOLocationID" = zd."LocationID"
     group by pickup_dropoff_pair
 )
-select *
+select pickup_dropoff_pair
 from trips
 order by avg_price desc
 limit 1;
