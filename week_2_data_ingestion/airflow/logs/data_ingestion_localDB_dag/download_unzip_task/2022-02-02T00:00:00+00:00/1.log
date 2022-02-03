@@ -1,0 +1,26 @@
+[2022-02-03 06:19:12,962] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_localDB_dag.download_unzip_task scheduled__2022-02-02T00:00:00+00:00 [queued]>
+[2022-02-03 06:19:12,978] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: data_ingestion_localDB_dag.download_unzip_task scheduled__2022-02-02T00:00:00+00:00 [queued]>
+[2022-02-03 06:19:12,979] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-03 06:19:12,979] {taskinstance.py:1239} INFO - Starting attempt 1 of 2
+[2022-02-03 06:19:12,979] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-03 06:19:12,992] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): download_unzip_task> on 2022-02-02 00:00:00+00:00
+[2022-02-03 06:19:12,998] {standard_task_runner.py:52} INFO - Started process 223571 to run task
+[2022-02-03 06:19:13,005] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'data_ingestion_localDB_dag', 'download_unzip_task', 'scheduled__2022-02-02T00:00:00+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/data_ingestion_localDB_dag.py', '--cfg-path', '/tmp/tmpy6u4uuqf', '--error-file', '/tmp/tmp5jnea3r6']
+[2022-02-03 06:19:13,005] {standard_task_runner.py:77} INFO - Job 3: Subtask download_unzip_task
+[2022-02-03 06:19:13,082] {logging_mixin.py:109} INFO - Running <TaskInstance: data_ingestion_localDB_dag.download_unzip_task scheduled__2022-02-02T00:00:00+00:00 [running]> on host 06e89db705ad
+[2022-02-03 06:19:13,148] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=data_ingestion_localDB_dag
+AIRFLOW_CTX_TASK_ID=download_unzip_task
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-02T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-02-02T00:00:00+00:00
+[2022-02-03 06:19:13,150] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-03 06:19:13,150] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'curl -sS https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2021-01.csv > /opt/***/yellow_tripdata_2021-01.csv']
+[2022-02-03 06:19:13,164] {subprocess.py:85} INFO - Output:
+[2022-02-03 06:19:19,975] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-02-03 06:19:20,091] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=data_ingestion_localDB_dag, task_id=download_unzip_task, execution_date=20220202T000000, start_date=20220203T061912, end_date=20220203T061920
+[2022-02-03 06:19:20,151] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-02-03 06:19:20,197] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
