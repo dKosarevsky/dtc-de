@@ -95,6 +95,8 @@ wget https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv
 
 Download this data and put it into Postgres (with jupyter notebooks or with a pipeline)
 
+My pipeline - [pipeline.py](pipeline.py)
+
 
 ## Question 3. Count records 
 
