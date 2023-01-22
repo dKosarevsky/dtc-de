@@ -95,8 +95,6 @@ wget https://s3.amazonaws.com/nyc-tlc/misc/taxi+_zone_lookup.csv
 
 Download this data and put it into Postgres (with jupyter notebooks or with a pipeline)
 
-My pipeline - [pipeline.py](pipeline.py)
-
 
 ## Question 3. Count records 
 
@@ -112,6 +110,8 @@ Remember that `lpep_pickup_datetime` and `lpep_dropoff_datetime` columns are in 
 - 21090
 
 ### Answer
+
+My pipeline - [pipeline.py](pipeline.py)
 
 run py script to ingest data into postgres:
 
